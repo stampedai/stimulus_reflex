@@ -444,7 +444,7 @@ const findControllerByReflexName = (reflexName, controllers) => {
 const getReflexRoots = element => {
   let list = []
   while (list.length === 0 && element) {
-    const reflexRoot = element.getAttribute(
+    let reflexRoot = element.getAttribute(
       stimulusApplication.schema.reflexRootAttribute
     )
     if (reflexRoot) {
